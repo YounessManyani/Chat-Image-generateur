@@ -1,0 +1,64 @@
+/* Styling for the entire login container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f3f4f6;
+}
+
+/* Box for the login elements */
+.login-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Title styling */
+.login-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333333;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Styling for the user info section */
+.user-info {
+    text-align: center;
+}
+
+/* User avatar styling */
+.user-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the logout button */
+.logout-btn, .upgrade-btn {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover, .upgrade-btn:hover {
+    background-color: #0056b3;
+}
+
+/* For responsive view */
+@media (max-width: 768px) {
+    .login-box {
+        width: 90%;
+    }
+}

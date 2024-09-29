@@ -1,0 +1,190 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  color: white ;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #829ab0 0%, #a8b0d4 50%, #5383d6 100%);
+}
+.App {
+  display: flex;
+  height: 100vh; /* Étant donné que vous voulez occuper toute la hauteur de l'écran */
+}
+
+/* Sidebar */
+.sideBar {
+  width: 300px;
+  border-right: 1px solid white;
+}
+.main{
+  flex: 9;
+}
+
+
+.upperSideTop {
+ display: flex;
+ align-items: center;
+ margin-bottom:2.5rem ;
+}
+.upperSide{
+  padding: 2rem;
+}
+
+.logo {
+  font-size: 2.4rem;
+  width: 30%;
+  font-weight: bold;
+  
+}
+
+.brand {
+ font-size: 2rem;
+}
+
+.midBtn {
+  width: 100%;
+  background-color: #5865F2;
+  border: none;
+  padding: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.addBtn {
+  height: 2rem;
+  padding-right: 1rem;
+}
+
+.query {
+  background-color: #e9ecef; /* Couleur pour les questions */
+  border: none;
+  width: 100%;
+  display: flex;
+  border-radius: 0.5rem;
+  padding: 10px;
+  margin: 5px 0; /* Marge externe */
+  text-align: left; /* Alignement à gauche */
+  cursor: pointer; /* Change le curseur au survol */
+}
+
+.query >img {
+  margin-right: 2rem;
+  object-fit: cover;
+  height: 1.75rem;
+
+}
+
+.lowerSide {
+  padding: 2rem;
+}
+
+.listItems {
+  margin: 0.7rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+
+}
+
+.listItemsImg {
+  margin: 1rem;
+  padding-right:1rem;
+}
+.listItems:nth-child(1)>.listItemsImg{
+  margin-right: 0.5rem;
+}
+ 
+
+.logoutButton {
+  background-color:#5865F2;
+  padding: 10px;
+  border: none;
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+}
+/* Styles pour la partie principale de dialogue */
+.main {
+  flex: 1; /* Occupe l'espace restant */
+  display: flex;
+  flex-direction: column;
+  padding: 20px; /* Espacement interne */
+  background-color: #ffffff; /* Couleur de fond */
+}
+/* Styles pour l'affichage du chat */
+.chats {
+  flex: 1; /* Occuper le plus d'espace possible */
+  overflow-y: auto; /* Scroll si le contenu dépasse */
+  padding: 10px; /* Espacement interne */
+}
+/* Style pour chaque message de chat */
+.chat {
+  display: flex;
+  align-items: flex-start; /* Aligné vers le haut */
+  margin-bottom: 15px; /* Espacement entre les messages */
+}
+.chatImg {
+  width: 40px; /* Taille de l'image de chat */
+  height: 40px; /* Taille de l'image de chat */
+  border-radius: 50%; /* Arrondir l'image */
+  margin-right: 10px; /* Espace entre l'image et le texte */
+}
+.text {
+  max-width: 70%; /* Limite la largeur du message */
+  padding: 10px; /* Espacement interne */
+  border-radius: 15px; /* Coins arrondis */
+  font-weight: 700;
+  font-size: large;
+}
+.user {
+  background-color: #d1e7dd; /* Couleur d'arrière-plan pour le message de l'utilisateur */
+  align-self: flex-end; /* Aligné à droite */
+  color:black;
+}
+.bot {
+  background-color: #f1f1f1; /* Couleur d'arrière-plan pour le message du bot */
+  color: black;
+}
+/* Styles pour le pied de page du chat */
+.chatFooter {
+  display: flex; /* Flex pour arrangement */
+  flex-direction: column;
+  text-align: center;
+  padding: 10px; /* Espacement interne */
+  border-top: 1px solid #dee2e6; /* Bordure en haut */
+}
+.inp {
+  flex: 1; /* Occuper le plus d'espace possible */
+  display: flex; /* Flex pour arrangement */
+  align-items: center; /* Aligné verticalement */
+}
+input[type="text"] {
+  flex: 1; /* Occuper le plus d'espace possible */
+  padding: 10px; /* Espacement interne */
+  border: 1px solid #ccc; /* Bordure pour l'input */
+  border-radius: 5px; /* Coins arrondis */
+  margin-right: 10px; /* Marge à droite */
+}
+.send {
+  background-color: transparent; /* Couleur du bouton d'envoi */
+  border: none; /* Pas de bordure */
+  color: white; /* Couleur du texte */
+  padding: 10px; /* Espacement interne */
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer; /* Changement du curseur au survol */
+}
